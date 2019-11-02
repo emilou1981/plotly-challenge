@@ -61,12 +61,13 @@ function buildCharts(sample) {
     var size = data.sample_values;
     var color = data.otu_ids;
     var labels = data.otu_labels;
-
+    var display = data.otu_labels;
 
     var bubble = {
       x: xAxis,
       y: yAxis,
       labels: labels,
+      hovertext: display,
       mode: "markers",
       marker: {
         size: size,
