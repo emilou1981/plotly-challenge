@@ -1,0 +1,1 @@
+web: gunicorn Bell_Button_Biodiversity.app:app

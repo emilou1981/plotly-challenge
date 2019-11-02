@@ -85,7 +85,8 @@ function buildCharts(sample) {
     // otu_ids, and labels (10 each).
   }
 
-function init() {
+
+  function init() {
       // Grab a reference to the dropdown select element
       var selector = d3.select("#selDataset");
 
@@ -104,12 +105,12 @@ function init() {
         buildMetadata(firstSample);
       });
     }
-
-function optionChanged(newSample) {
+  
+  function optionChanged(newSample) {
       // Fetch new data each time a new sample is selected
       buildCharts(newSample);
       buildMetadata(newSample);
     }
 
-// Initialize the dashboard
-init();
+  // Initialize the dashboard
+  init();
